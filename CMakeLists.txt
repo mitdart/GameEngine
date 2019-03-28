@@ -6,4 +6,4 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(GameEngine
-        README.md main.cpp)
+        README.md main.cpp GameObject.cpp GameObject.h Renderer.cpp Renderer.h Script.h)
