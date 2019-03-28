@@ -1,1 +1,1 @@
-# Game Engine from Stepan and Lesya and Katya ygiufyu
+# Game Engine from Stepan and Lesya and Katya
