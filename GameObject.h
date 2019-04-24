@@ -1,15 +1,23 @@
 #ifndef GAMEENGINE_GAMEOBJECT_H
 #define GAMEENGINE_GAMEOBJECT_H
 
-#include "Script.h"
-#include "Renderer.h"
+#include <map>
+#include <list>
+#include <string>
+
+#include "Component.h"
 
 namespace  engine {
 
     class GameObject {
     public:
-        Script *script;
-        Renderer *renderer;
+        std::list<Component*> components;
+
+        template <typename CompT> void AddComponent();
+
+        template <typename CompT> CompT* GetComponents();
+
+        template <typename CompT> void RemoveComponent();
     };
 
 } //end namespace engine
