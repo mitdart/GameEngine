@@ -1,6 +1,4 @@
-//
-// Created by adm1n on 4/24/19.
-//
+#pragma once
 
 #ifndef GAMEENGINE_LOGICSMANAGER_H
 #define GAMEENGINE_LOGICSMANAGER_H
@@ -13,7 +11,8 @@ namespace engine {
 
     class LogicsManager {
     public:
-        std::list<Script*> scripts;
+        std::list<Script *> scripts;
+
         void UpdateLogic();
     };
 

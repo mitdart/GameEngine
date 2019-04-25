@@ -1,3 +1,5 @@
+#pragma once
+
 #ifndef GAMEENGINE_DATASTORAGE_H
 #define GAMEENGINE_DATASTORAGE_H
 
@@ -6,7 +8,7 @@
 
 namespace engine {
 
-    class DataStorage : public std::map<std::string, GameObject> {
+    class DataStorage : public std::map<std::string, GameObject*> {
     };
 
 }

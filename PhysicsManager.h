@@ -1,6 +1,4 @@
-//
-// Created by adm1n on 4/24/19.
-//
+#pragma once
 
 #ifndef GAMEENGINE_PHYSICSMANAGER_H
 #define GAMEENGINE_PHYSICSMANAGER_H

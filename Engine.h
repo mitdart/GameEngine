@@ -1,3 +1,5 @@
+#pragma once
+
 #ifndef GAMEENGINE_ENGINE_H
 #define GAMEENGINE_ENGINE_H
 
@@ -7,29 +9,34 @@
 #include "LogicsManager.h"
 #include "PhysicsManager.h"
 
-namespace engine{
+namespace engine {
 
-    class Engine{
+    class Engine {
     private:
 
-        static Engine * instance;
-        Engine() {}
-        Engine( const Engine& );
-        Engine operator=( Engine& );
+        static Engine *instance;
+
+        Engine();
+
+        Engine(const Engine &);
+
+        Engine operator=(Engine &);
 
     public:
 
-        static Engine * getInstance() {
-            if(!instance)
+        static Engine *getInstance() {
+            if (instance != nullptr) {
                 instance = new Engine;
+            }
+
             return instance;
         }
 
-        void AddObject(std::string name, Coords coords, Script* script, Renderer* renderer, Coords size = Coords(0, 0));
+        void AddObject(std::string name);
 
         void RemoveObject(std::string name);
 
-        void GetObject(std::string name);
+        GameObject* GetObject(std::string name);
 
         EventManager event_manager;
         DrawManager draw_manager;

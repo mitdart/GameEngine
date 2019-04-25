@@ -4,7 +4,7 @@
 
 namespace engine {
 
-    bool EventManager::GetKey(Event& event) {
+    bool EventManager::GetKey(Event &event) {
         return render_window.pollEvent(event);
     }
 

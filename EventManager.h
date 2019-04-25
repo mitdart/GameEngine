@@ -1,3 +1,5 @@
+#pragma once
+
 #ifndef GAMEENGINE_EVENTMANAGER_H
 #define GAMEENGINE_EVENTMANAGER_H
 
@@ -11,7 +13,8 @@ namespace engine {
     class EventManager {
     public:
         sf::RenderWindow render_window;
-        bool GetKey(Event& event);
+
+        bool GetKey(Event &event);
     };
 
 }

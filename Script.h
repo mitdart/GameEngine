@@ -1,3 +1,5 @@
+#pragma once
+
 #ifndef GAMEENGINE_SCRIPT_H
 #define GAMEENGINE_SCRIPT_H
 
@@ -7,8 +9,8 @@ namespace engine {
 
     class Script : public Component {
     public:
-        virtual void start() = 0;
-        virtual void update() = 0;
+        virtual void Start() = 0;
+        virtual void Update() = 0;
     };
 
 } //end namespace engine

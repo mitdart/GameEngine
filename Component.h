@@ -1,17 +1,15 @@
-//
-// Created by adm1n on 4/24/19.
-//
+#pragma once
 
 #ifndef GAMEENGINE_COMPONENT_H
 #define GAMEENGINE_COMPONENT_H
 
-#include "GameObject.h"
+#include <string>
 
 namespace engine {
 
     class Component {
     public:
-        GameObject object;
+        std::string object_name;
     };
 
 }
